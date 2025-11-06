@@ -84,7 +84,7 @@ COPY --from=base /usr/lib/libpsl.so.5 /usr/lib/libpsl.so.5
 COPY --from=base /usr/lib/libgcc_s.so.1 /usr/lib/libgcc_s.so.1
 COPY --from=base /usr/lib/libnghttp2.so.14 /usr/lib/libnghttp2.so.14
 COPY --from=base /usr/lib/libbrotlidec.so.1 /usr/lib/libbrotlidec.so.1
-COPY --from=base /lib/libz.so.1 /lib/libz.so.1
+COPY --from=base /usr/lib/libz.so.1 /usr/lib/libz.so.1
 COPY --from=base /usr/lib/libbrotlicommon.so.1 /usr/lib/libbrotlicommon.so.1
 
 # we do not need root anymore
